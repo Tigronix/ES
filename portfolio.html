@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="windows-1251">
+	<title>Портфолио</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<defs>
+			<symbol id="icon-phone_in_talk" viewBox="0 0 24 24">
+			<title>phone_in_talk</title>
+			<path d="M15 12c0-1.641-1.359-3-3-3v-2.016c2.766 0 5.016 2.25 5.016 5.016h-2.016zM18.984 12c0-3.891-3.094-6.984-6.984-6.984v-2.016c4.969 0 9 4.031 9 9h-2.016zM20.016 15.516c0.563 0 0.984 0.422 0.984 0.984v3.516c0 0.563-0.422 0.984-0.984 0.984-9.375 0-17.016-7.641-17.016-17.016 0-0.563 0.422-0.984 0.984-0.984h3.516c0.563 0 0.984 0.422 0.984 0.984 0 1.266 0.188 2.438 0.563 3.563 0.094 0.328 0.047 0.75-0.234 1.031l-2.203 2.203c1.453 2.859 3.797 5.156 6.609 6.609l2.203-2.203c0.281-0.281 0.703-0.328 1.031-0.234 1.125 0.375 2.297 0.563 3.563 0.563z"></path>
+			</symbol>
+			<symbol id="icon-check" viewBox="0 0 28 28">
+			<title>check</title>
+			<path d="M26.109 8.844c0 0.391-0.156 0.781-0.438 1.062l-13.438 13.438c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-7.781-7.781c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l2.125-2.125c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l4.594 4.609 10.25-10.266c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l2.125 2.125c0.281 0.281 0.438 0.672 0.438 1.062z"></path>
+			</symbol>
+			<symbol id="icon-person" viewBox="0 0 24 24">
+			<title>person</title>
+			<path d="M12 14.016c2.672 0 8.016 1.313 8.016 3.984v2.016h-16.031v-2.016c0-2.672 5.344-3.984 8.016-3.984zM12 12c-2.203 0-3.984-1.781-3.984-3.984s1.781-4.031 3.984-4.031 3.984 1.828 3.984 4.031-1.781 3.984-3.984 3.984z"></path>
+			</symbol>
+			<symbol id="icon-person" viewBox="0 0 24 24">
+				<title>person</title>
+				<path d="M12 14.016c2.672 0 8.016 1.313 8.016 3.984v2.016h-16.031v-2.016c0-2.672 5.344-3.984 8.016-3.984zM12 12c-2.203 0-3.984-1.781-3.984-3.984s1.781-4.031 3.984-4.031 3.984 1.828 3.984 4.031-1.781 3.984-3.984 3.984z"></path>
+			</symbol>
+			<symbol id="icon-business_center" viewBox="0 0 24 24">
+				<title>business_center</title>
+				<path d="M14.016 6.984v-1.969h-4.031v1.969h4.031zM20.016 6.984c1.078 0 1.969 0.938 1.969 2.016v3c0 1.078-0.891 2.016-1.969 2.016h-6v-2.016h-4.031v2.016h-6c-1.125 0-1.969-0.891-1.969-2.016v-3c0-1.078 0.891-2.016 1.969-2.016h3.984v-1.969l2.016-2.016h3.984l2.016 2.016v1.969h4.031zM9.984 15.984h4.031v-0.984h6.984v3.984c0 1.125-0.891 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.891-2.016-2.016v-3.984h6.984v0.984z"></path>
+			</symbol>
+			<symbol id="icon-mail_outline" viewBox="0 0 24 24">
+				<title>mail_outline</title>
+				<path d="M12 11.016l8.016-5.016h-16.031zM20.016 18v-9.984l-8.016 4.969-8.016-4.969v9.984h16.031zM20.016 3.984c1.078 0 1.969 0.938 1.969 2.016v12c0 1.078-0.891 2.016-1.969 2.016h-16.031c-1.078 0-1.969-0.938-1.969-2.016v-12c0-1.078 0.891-2.016 1.969-2.016h16.031z"></path>
+			</symbol>
+			<symbol id="icon-phone" viewBox="0 0 24 24">
+				<title>phone</title>
+				<path d="M6.609 10.781c1.453 2.813 3.797 5.156 6.609 6.609l2.203-2.203c0.281-0.281 0.703-0.375 1.031-0.234 1.125 0.375 2.344 0.563 3.563 0.563 0.563 0 0.984 0.422 0.984 0.984v3.516c0 0.563-0.422 0.984-0.984 0.984-9.375 0-17.016-7.641-17.016-17.016 0-0.563 0.422-0.984 0.984-0.984h3.516c0.563 0 0.984 0.422 0.984 0.984 0 1.266 0.188 2.438 0.563 3.563 0.094 0.328 0.047 0.75-0.234 1.031z"></path>
+			</symbol>
+			<symbol id="icon-handshake-o" viewBox="0 0 36 28">
+				<title>handshake-o</title>
+				<path d="M3 18c1.313 0 1.313-2 0-2s-1.313 2 0 2zM26.016 17.094c-1.234-1.609-2.438-3.25-3.844-4.719l-1.953 2.188c-1.719 1.953-4.797 1.906-6.469-0.094-1.188-1.437-1.188-3.5 0.031-4.922l2.766-3.219c-0.969-0.5-2.141-0.328-3.187-0.328-0.922 0-1.813 0.375-2.469 1.031l-2.469 2.469h-2.422v8.5c0.688 0 1.312-0.094 1.859 0.438l4.641 4.562c0.953 0.922 2.187 1.734 3.547 1.734 0.703 0 1.453-0.234 1.953-0.734 1.172 0.406 2.531-0.25 2.891-1.453 0.75 0.063 1.437-0.172 1.984-0.688 0.359-0.328 0.828-0.984 0.781-1.5 0.141 0.141 0.484 0.156 0.672 0.156 1.859 0 2.828-1.953 1.687-3.422zM28.5 18h1.5v-8h-1.453l-2.453-2.812c-0.656-0.75-1.641-1.188-2.641-1.188h-2.609c-0.875 0-1.719 0.391-2.281 1.047l-3.266 3.797c-0.578 0.688-0.578 1.656-0.016 2.344 0.891 1.062 2.531 1.078 3.453 0.047l3.016-3.406c0.719-0.797 2.031-0.047 1.703 0.969 0.594 0.688 1.234 1.359 1.813 2.047 0.781 0.969 1.531 1.984 2.297 2.969 0.484 0.625 0.844 1.375 0.938 2.188zM33 18c1.313 0 1.313-2 0-2s-1.313 2 0 2zM36 9v10c0 0.547-0.453 1-1 1h-6.781c-0.562 1.359-1.797 2.266-3.234 2.469-0.672 0.984-1.703 1.734-2.859 1.984-0.859 1.094-2.25 1.75-3.641 1.656-2.578 1.453-5.484 0.187-7.406-1.703l-4.484-4.406h-5.594c-0.547 0-1-0.453-1-1v-10.5c0-0.547 0.453-1 1-1h6.578c1.813-1.813 3.062-3.5 5.781-3.5h1.828c1.016 0 2 0.313 2.828 0.875 0.828-0.562 1.813-0.875 2.828-0.875h2.609c2.969 0 4.203 1.937 6 4h5.547c0.547 0 1 0.453 1 1z"></path>
+			</symbol>
+			<symbol id="icon-rocket" viewBox="0 0 26 28">
+				<title>rocket</title>
+				<path d="M22.5 7c0-0.828-0.672-1.5-1.5-1.5s-1.5 0.672-1.5 1.5 0.672 1.5 1.5 1.5 1.5-0.672 1.5-1.5zM26 2.5c0 5.187-1.437 8.641-5.141 12.359-0.906 0.891-1.937 1.813-3.047 2.75l-0.313 5.922c-0.016 0.156-0.109 0.313-0.25 0.406l-6 3.5c-0.078 0.047-0.156 0.063-0.25 0.063-0.125 0-0.25-0.047-0.359-0.141l-1-1c-0.125-0.141-0.172-0.328-0.125-0.5l1.328-4.312-4.391-4.391-4.312 1.328c-0.047 0.016-0.094 0.016-0.141 0.016-0.125 0-0.266-0.047-0.359-0.141l-1-1c-0.156-0.172-0.187-0.422-0.078-0.609l3.5-6c0.094-0.141 0.25-0.234 0.406-0.25l5.922-0.313c0.938-1.109 1.859-2.141 2.75-3.047 3.906-3.891 6.891-5.141 12.328-5.141 0.281 0 0.531 0.219 0.531 0.5z"></path>
+			</symbol>
+			<symbol id="icon-code" viewBox="0 0 32 32">
+				<title>code</title>
+				<path d="M12.533 22.133l-6.133-6.133 6.133-6.133-1.867-1.867-8 8 8 8 1.867-1.867zM19.467 22.133l6.133-6.133-6.133-6.133 1.867-1.867 8 8-8 8-1.867-1.867z"></path>
+			</symbol>
+			<symbol id="icon-timeline" viewBox="0 0 32 32">
+				<title>timeline</title>
+				<path d="M30.667 10.667c0 1.467-1.2 2.667-2.667 2.667-0.24 0-0.467-0.027-0.68-0.093l-4.747 4.733c0.067 0.213 0.093 0.453 0.093 0.693 0 1.467-1.2 2.667-2.667 2.667s-2.667-1.2-2.667-2.667c0-0.24 0.027-0.48 0.093-0.693l-3.4-3.4c-0.213 0.067-0.453 0.093-0.693 0.093s-0.48-0.027-0.693-0.093l-6.067 6.080c0.067 0.213 0.093 0.44 0.093 0.68 0 1.467-1.2 2.667-2.667 2.667s-2.667-1.2-2.667-2.667 1.2-2.667 2.667-2.667c0.24 0 0.467 0.027 0.68 0.093l6.080-6.067c-0.067-0.213-0.093-0.453-0.093-0.693 0-1.467 1.2-2.667 2.667-2.667s2.667 1.2 2.667 2.667c0 0.24-0.027 0.48-0.093 0.693l3.4 3.4c0.213-0.067 0.453-0.093 0.693-0.093s0.48 0.027 0.693 0.093l4.733-4.747c-0.067-0.213-0.093-0.44-0.093-0.68 0-1.467 1.2-2.667 2.667-2.667s2.667 1.2 2.667 2.667z"></path>
+			</symbol>
+			<symbol id="icon-equalizer" viewBox="0 0 32 32">
+				<title>equalizer</title>
+				<path d="M13.333 26.667h5.333v-21.333h-5.333v21.333zM5.333 26.667h5.333v-10.667h-5.333v10.667zM21.333 12v14.667h5.333v-14.667h-5.333z"></path>
+			</symbol>
+			<symbol id="icon-chat" viewBox="0 0 32 32">
+				<title>chat</title>
+				<path d="M26.667 2.667h-21.333c-1.467 0-2.653 1.2-2.653 2.667l-0.013 24 5.333-5.333h18.667c1.467 0 2.667-1.2 2.667-2.667v-16c0-1.467-1.2-2.667-2.667-2.667zM8 12h16v2.667h-16v-2.667zM18.667 18.667h-10.667v-2.667h10.667v2.667zM24 10.667h-16v-2.667h16v2.667z"></path>
+			</symbol>
+			<symbol id="icon-pin-drop" viewBox="0 0 32 32">
+				<title>pin-drop</title>
+				<path d="M24 10.667c0-4.413-3.587-8-8-8s-8 3.587-8 8c0 6 8 14.667 8 14.667s8-8.667 8-14.667zM13.333 10.667c0-1.467 1.2-2.667 2.667-2.667s2.667 1.2 2.667 2.667-1.187 2.667-2.667 2.667c-1.467 0-2.667-1.2-2.667-2.667zM6.667 26.667v2.667h18.667v-2.667h-18.667z"></path>
+			</symbol>
+			<symbol id="icon-room" viewBox="0 0 32 32">
+				<title>room</title>
+				<path d="M16 2.667c-5.16 0-9.333 4.173-9.333 9.333 0 7 9.333 17.333 9.333 17.333s9.333-10.333 9.333-17.333c0-5.16-4.173-9.333-9.333-9.333zM16 15.333c-1.84 0-3.333-1.493-3.333-3.333s1.493-3.333 3.333-3.333 3.333 1.493 3.333 3.333-1.493 3.333-3.333 3.333z"></path>
+			</symbol>
+			<symbol id="icon-public" viewBox="0 0 32 32">
+				<title>public</title>
+				<path d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333 13.333-5.973 13.333-13.333-5.973-13.333-13.333-13.333zM14.667 26.573c-5.267-0.653-9.333-5.133-9.333-10.573 0-0.827 0.107-1.613 0.28-2.387l6.387 6.387v1.333c0 1.467 1.2 2.667 2.667 2.667v2.573zM23.867 23.187c-0.347-1.080-1.333-1.853-2.533-1.853h-1.333v-4c0-0.733-0.6-1.333-1.333-1.333h-8v-2.667h2.667c0.733 0 1.333-0.6 1.333-1.333v-2.667h2.667c1.467 0 2.667-1.2 2.667-2.667v-0.547c3.907 1.587 6.667 5.413 6.667 9.88 0 2.773-1.067 5.293-2.8 7.187z"></path>
+			</symbol>
+			<symbol id="icon-verifed-user" viewBox="0 0 32 32">
+				<title>verifed-user</title>
+				<path d="M16 1.333l-12 5.333v8c0 7.4 5.12 14.32 12 16 6.88-1.68 12-8.6 12-16v-8l-12-5.333zM13.333 22.667l-5.333-5.333 1.88-1.88 3.453 3.44 8.787-8.787 1.88 1.893-10.667 10.667z"></path>
+			</symbol>
+			<symbol id="icon-supervisor-account" viewBox="0 0 32 32">
+				<title>supervisor-account</title>
+				<path d="M22 16c1.84 0 3.32-1.493 3.32-3.333s-1.48-3.333-3.32-3.333c-1.84 0-3.333 1.493-3.333 3.333s1.493 3.333 3.333 3.333zM12 14.667c2.213 0 3.987-1.787 3.987-4s-1.773-4-3.987-4c-2.213 0-4 1.787-4 4s1.787 4 4 4zM22 18.667c-2.44 0-7.333 1.227-7.333 3.667v3h14.667v-3c0-2.44-4.893-3.667-7.333-3.667zM12 17.333c-3.107 0-9.333 1.56-9.333 4.667v3.333h9.333v-3c0-1.133 0.44-3.12 3.16-4.627-1.16-0.24-2.28-0.373-3.16-0.373z"></path>
+			</symbol>
+		</defs>
+	</svg>
+	<div class="page-header">
+		<a href="#" class="page-header__logo">
+		</a>
+		<div class="menu__wrap">
+			<span class="hamburger">
+				<span class="hamburger__line"></span>
+				<span class="line hamburger__line"></span>
+				<div class="hamburger__back">Назад</div>
+			</span>
+			<div class="hamburger__text">меню</div>
+		</div>
+		<nav class="nav">
+			<ul class="nav__ul">
+				<li class="nav__li"><a href="contact.html" class="nav__link nav__link--services">Услуги</a></li>
+				<li class="nav__li"><a href="portfolio.html" class="nav__link">Портфолио</a></li>
+				<li class="nav__li"><a href="create.html" class="nav__link">О компании</a></li>
+				<li class="nav__li"><a href="contact.html" class="nav__link">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="page-header__contact">
+			<div class="page-header__phone">+7(495) 506-08-31</div>
+			<div class="page-header__address">Москва, Большой Каретный пер., д.2</div>
+		</div>
+	</div><!--page-header-->
+	<main class="main main--static">
+    <aside class="left-menu">
+    	<a href="#" class="left-menu__logo"></a>
+    	<div class="left-menu__item">
+    		<a href="#" class="left-menu__header left-menu__header--code">Разработка сайтов</a>
+    		<ul class="left-menu__list">
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Интернет магазины</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Лендинг пейдж</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Корпоративные сайты</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Сайт-визитка</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Адаптивные/мобильные сайты</a></li>
+    		</ul>
+    	</div>
+    	<div class="left-menu__item">
+    		<a href="#" class="left-menu__header left-menu__header--timeline">Продвижение сайтов</a>
+    		<ul class="left-menu__list">
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Стратегия и планирование</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Работа с конверсиями</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Внедрение новых каналов продвижения</a></li>
+    		</ul>
+    	</div>
+    	<div class="left-menu__item">
+    		<a href="#" class="left-menu__header left-menu__header--equalizer">Аудит и анализ</a>
+    		<ul class="left-menu__list">
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Аналитика трафика</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Работа с конверсиями</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">SEO анализ</a></li>
+    		</ul>
+    	</div>
+    	<div class="left-menu__item">
+    		<a href="#" class="left-menu__header left-menu__header--rocket">Реклама</a>
+    		<ul class="left-menu__list">
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Контекстная реклама</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Продвижение в социальных сетях (SMM)</a></li>
+    		</ul>
+    	</div>
+    	<div class="left-menu__item">
+    		<a href="#" class="left-menu__header left-menu__header--handshake">Поддержка</a>
+    		<ul class="left-menu__list">
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Наполнение контентом</a></li>
+    			<li class="left-menu__li"><a href="#" class="left-menu__link">Создание резервных копий</a></li>
+    		</ul>
+    	</div>
+    </aside>
+    <section class="bread wrapper">
+			<a href="#" class="bread__link">ES-Studio</a>
+			<a href="#" class="bread__link">Портфолио</a>
+		</section><!--bread-->
+    <h1 class="h1">Портфолио</h1>
+    <div class="portfolio-page wow fadeIn">
+    	<div style="background-image: url(img/portfolio-static1.jpg);" class="portfolio-page__img">
+				<img src="img/portfolio-static1.jpg" alt="">
+    		<div class="portfolio-page__img-desc">
+    			<div class="t1"> ЖК «АФРОДИТА»</div>
+    			<div class="t2"> Разработка сайта компании застройщика</div>
+    			<a href="" class="btn btn--all"> Подробнее</a>
+    		</div>
+    	</div><!--portfolio-page__img-->
+    	<div class="portfolio-page__desc">
+    		<div class="portfolio-page__info portfolio-page__info--aliance">
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Клиент:</div>
+    				<div class="portfolio-page__name"> СГ «АЛЬЯНС»</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type"> Услуги:</div>
+    				<div class="portfolio-page__value">
+    					<a href="#" class="portfolio-page__link">создание сайта,</a>
+    					<a href="#" class="portfolio-page__link">контекстная реклама,</a><br>
+    					<a href="#" class="portfolio-page__link">продвижение сайта</a>
+    				</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Ссылка:</div>
+    				<div class="portfolio-page__value"><a href="#" class="portfolio-page__link">http://0051234.ru</a></div>
+    			</div>
+    		</div><!--portfolio-page__info-->
+    		<div class="portfolio-page__spec">
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Задача:</div>
+						<div class="portfolio-page__text"> Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</div>
+    			</div>
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Решение:</div>
+						<div class="portfolio-page__text">  Мы разработали легкий сайт, сделав дизайн в виде лендинга. Тем самым вся доступная информация о компании находится на одной странице. Также был создан дизайн визиток. Тем самым вся доступная информация о компании находится на одной странице.</div>
+    			</div>
+    		</div><!--portfolio-page__spec-->
+    	</div><!--portfolio-page__desc-->
+    </div><!--portfolio-page-->
+    <div class="portfolio-page wow fadeIn">
+    	<div class="portfolio-page__desc">
+    		<div class="portfolio-page__info portfolio-page__info--arrow">
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Клиент:</div>
+    				<div class="portfolio-page__name"> ЖК «СТРЕЛА»</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type"> Услуги:</div>
+    				<div class="portfolio-page__value">
+    					<a href="#" class="portfolio-page__link">создание сайта,</a>
+    					<a href="#" class="portfolio-page__link">контекстная реклама,</a><br>
+    					<a href="#" class="portfolio-page__link">продвижение сайта</a>
+    				</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Ссылка:</div>
+    				<div class="portfolio-page__value"><a href="#" class="portfolio-page__link">http://2330246.ru</a></div>
+    			</div>
+    		</div><!--portfolio-page__info-->
+    		<div class="portfolio-page__spec">
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Задача:</div>
+						<div class="portfolio-page__text"> Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</div>
+    			</div>
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Решение:</div>
+						<div class="portfolio-page__text">  Мы разработали легкий сайт, сделав дизайн в виде лендинга. Тем самым вся доступная информация о компании находится на одной странице. Также был создан дизайн визиток. Тем самым вся доступная информация о компании находится на одной странице.</div>
+    			</div>
+    		</div><!--portfolio-page__spec-->
+    	</div><!--portfolio-page__desc-->
+    	<div style="background-image: url(img/portfolio-static2.jpg);" class="portfolio-page__img">
+				<img src="img/portfolio-static2.jpg" alt="">
+    		<div class="portfolio-page__img-desc">
+    			<div class="t1">ЖК «СТРЕЛА»</div>
+    			<div class="t2"> Разработка сайта компании застройщика</div>
+    			<a href="" class="btn btn--all"> Подробнее</a>
+    		</div>
+    	</div><!--portfolio-page__img-->
+    </div><!--portfolio-page-->
+    <div class="portfolio-page wow fadeIn">
+    	<div style="background-image: url(img/portfolio-static3.jpg);" class="portfolio-page__img">
+				<img src="img/portfolio-static3.jpg" alt="">
+    		<div class="portfolio-page__img-desc">
+    			<div class="t3"> Учебный центр</div>
+    			<div class="t1">«ЗОЛОТАЯ НИКА»</div>
+    			<div class="t2"> Разработка сайта компании застройщика</div>
+    			<a href="" class="btn btn--all"> Подробнее</a>
+    		</div>
+    	</div><!--portfolio-page__img-->
+    	<div class="portfolio-page__desc">
+    		<div class="portfolio-page__info portfolio-page__info--nika">
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Клиент:</div>
+    				<div class="portfolio-page__name">Учебный центр «ЗОЛОТАЯ НИКА»</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type"> Услуги:</div>
+    				<div class="portfolio-page__value">
+    					<a href="#" class="portfolio-page__link">создание сайта,</a>
+    					<a href="#" class="portfolio-page__link">контекстная реклама,</a><br>
+    					<a href="#" class="portfolio-page__link">продвижение сайта</a>
+    				</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Ссылка:</div>
+    				<div class="portfolio-page__value"><a href="#" class="portfolio-page__link">http://shkola-nika.ru</a></div>
+    			</div>
+    		</div><!--portfolio-page__info-->
+    		<div class="portfolio-page__spec">
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Задача:</div>
+						<div class="portfolio-page__text"> Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</div>
+    			</div>
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Решение:</div>
+						<div class="portfolio-page__text">  Мы разработали легкий сайт, сделав дизайн в виде лендинга. Тем самым вся доступная информация о компании находится на одной странице. Также был создан дизайн визиток. Тем самым вся доступная информация о компании находится на одной странице.</div>
+    			</div>
+    		</div><!--portfolio-page__spec-->
+    	</div><!--portfolio-page__desc-->
+    </div><!--portfolio-page-->
+    <div class="portfolio-page wow fadeIn">
+    	<div class="portfolio-page__desc">
+    		<div class="portfolio-page__info portfolio-page__info--zsa">
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Клиент:</div>
+    				<div class="portfolio-page__name"> Бизнес-центр «ЗСА»</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type"> Услуги:</div>
+    				<div class="portfolio-page__value">
+    					<a href="#" class="portfolio-page__link">создание сайта,</a>
+    					<a href="#" class="portfolio-page__link">контекстная реклама,</a><br>
+    					<a href="#" class="portfolio-page__link">продвижение сайта</a>
+    				</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Ссылка:</div>
+    				<div class="portfolio-page__value"><a href="#" class="portfolio-page__link">http://shkola-nika.ru</a></div>
+    			</div>
+    		</div><!--portfolio-page__info-->
+    		<div class="portfolio-page__spec">
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Задача:</div>
+						<div class="portfolio-page__text"> Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</div>
+    			</div>
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Решение:</div>
+						<div class="portfolio-page__text">  Мы разработали легкий сайт, сделав дизайн в виде лендинга. Тем самым вся доступная информация о компании находится на одной странице. Также был создан дизайн визиток. Тем самым вся доступная информация о компании находится на одной странице.</div>
+    			</div>
+    		</div><!--portfolio-page__spec-->
+    	</div><!--portfolio-page__desc-->
+    	<div style="background-image: url(img/portfolio-static4.jpg);" class="portfolio-page__img">
+				<img src="img/portfolio-static4.jpg" alt="">
+    		<div class="portfolio-page__img-desc">
+    			<div class="t3">  Бизнес-центр</div>
+    			<div class="t1">«ЗСА»</div>
+    			<div class="t2"> Разработка сайта компании застройщика</div>
+    			<a href="" class="btn btn--all"> Подробнее</a>
+    		</div>
+    	</div><!--portfolio-page__img-->
+    </div><!--portfolio-page-->
+    <div class="portfolio-page wow fadeIn">
+    	<div style="background-image: url(img/portfolio-static5.jpg);" class="portfolio-page__img">
+				<img src="img/portfolio-static5.jpg" alt="">
+    		<div class="portfolio-page__img-desc">
+    			<div class="t3">Дачный поселок</div>
+    			<div class="t1">«ИЛЛЮЗИОН»</div>
+    			<div class="t2"> Разработка сайта компании застройщика</div>
+    			<a href="" class="btn btn--all"> Подробнее</a>
+    		</div>
+    	</div><!--portfolio-page__img-->
+    	<div class="portfolio-page__desc">
+    		<div class="portfolio-page__info portfolio-page__info--illusion">
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Клиент:</div>
+    				<div class="portfolio-page__name">  Дачный поселок «ИЛЛЮЗИОН»</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type"> Услуги:</div>
+    				<div class="portfolio-page__value">
+    					<a href="#" class="portfolio-page__link">создание сайта,</a>
+    					<a href="#" class="portfolio-page__link">контекстная реклама,</a><br>
+    					<a href="#" class="portfolio-page__link">продвижение сайта</a>
+    				</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Ссылка:</div>
+    				<div class="portfolio-page__value"><a href="#" class="portfolio-page__link">http://kp-illuzion.ru</a></div>
+    			</div>
+    		</div><!--portfolio-page__info-->
+    		<div class="portfolio-page__spec">
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Задача:</div>
+						<div class="portfolio-page__text"> Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</div>
+    			</div>
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Решение:</div>
+						<div class="portfolio-page__text">  Мы разработали легкий сайт, сделав дизайн в виде лендинга. Тем самым вся доступная информация о компании находится на одной странице. Также был создан дизайн визиток. Тем самым вся доступная информация о компании находится на одной странице.</div>
+    			</div>
+    		</div><!--portfolio-page__spec-->
+    	</div><!--portfolio-page__desc-->
+    </div><!--portfolio-page-->
+    <div class="portfolio-page wow fadeIn">
+    	<div class="portfolio-page__desc">
+    		<div class="portfolio-page__info portfolio-page__info--ekofin">
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Клиент:</div>
+    				<div class="portfolio-page__name"> ООО «ЭКОФИНПЛАСТ»</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type"> Услуги:</div>
+    				<div class="portfolio-page__value">
+    					<a href="#" class="portfolio-page__link">создание сайта,</a>
+    					<a href="#" class="portfolio-page__link">контекстная реклама,</a><br>
+    					<a href="#" class="portfolio-page__link">продвижение сайта</a>
+    				</div>
+    			</div>
+    			<div class="portfolio-page__line">
+    				<div class="portfolio-page__type">Ссылка:</div>
+    				<div class="portfolio-page__value"><a href="#" class="portfolio-page__link">http://kp-illuzion.ru</a></div>
+    			</div>
+    		</div><!--portfolio-page__info-->
+    		<div class="portfolio-page__spec">
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Задача:</div>
+						<div class="portfolio-page__text"> Разработать сайт. Необходимость обеспечить комфортное использование сайта не только с десктопов, но и с телефонов, планшетов и других мобильных устройств.</div>
+    			</div>
+    			<div class="portfolio-page__text-block">
+						<div class="portfolio-page__title">Решение:</div>
+						<div class="portfolio-page__text">  Мы разработали легкий сайт, сделав дизайн в виде лендинга. Тем самым вся доступная информация о компании находится на одной странице. Также был создан дизайн визиток. Тем самым вся доступная информация о компании находится на одной странице.</div>
+    			</div>
+    		</div><!--portfolio-page__spec-->
+    	</div><!--portfolio-page__desc-->
+    	<div style="background-image: url(img/portfolio-static6.jpg);" class="portfolio-page__img">
+				<img src="img/portfolio-static6.jpg" alt="">
+    		<div class="portfolio-page__img-desc">
+    			<div class="t3"> Конструктор ежедневников</div>
+    			<div class="t1">«ЭКОФИНПЛАСТ»</div>
+    			<div class="t2"> Разработка сайта компании застройщика</div>
+    			<a href="" class="btn btn--all"> Подробнее</a>
+    		</div>
+    	</div><!--portfolio-page__img-->
+    </div><!--portfolio-page-->
+    
+		<section class="our-goal wow fadeIn wrapper">
+			<div class="our-goal__img">
+				<img src="img/boss.jpg" alt="" class="img">
+				<div class="name"> Директор студии Степанов Евгений</div>
+			</div>
+			<div class="our-goal__desc">
+				<div class="our-goal__header">Наша цель - рост вашего бизнеса</div>
+				<p class="text">
+				 Главным преимуществом студии ES-Studio можно назвать наличие богатого опыта. Работаем с 2004 года. Большинство заказчиков не могут сформулировать задачу в технических терминах, опыт помогает лучше понимать пожелания клиентов и удовлетворять их. После того, как сайт будет готов и запущен, мы продолжаем оказывать поддержку и развитие. Такой подход дает результат в виде большого числа отзывов и постоянных клиентов, он позволяет совершенствовать наше мастерство.
+				</p>
+				<p class="text">
+				Первоначально нужно определиться с функциональностью страниц и их структурой. Для этого проводится моделирование сценариев возможного поведения пользователей. Второй этап включает в себя создание нескольких эскизов, выбор между которыми предлагается сделать заказчику. Их разработка проводится в соответствии с целью привлечения клиентов.
+				</p>
+				<p class="text">Прототипы и концепция служат основой для создания полноценного макета. Он включает в себя верстку и написание скриптов для визуализации отдельных элементов. После окончательного согласования функциональности можно приступать к написанию кода и интеграции/настройке CMS и сторонних сервисов.</p>
+			</div>
+		</section><!--our-goal-->
+		<h2 class="h2">Смотрите также:</h2>
+		<section class="services-slider wow fadeIn">
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Разработка <br>сайтов</div>
+				<div class="services-slider__icon">
+    			<svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg>
+    		</div>
+				<div class="services-slider__img services-slider__img--blue"><img src="img/services-1.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">100 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Продвижение<br>сайтов</div>
+				<div class="services-slider__icon">
+    			<svg class="icon icon-timeline"><use xlink:href="#icon-timeline"></use></svg>
+    		</div>
+				<div class="services-slider__img services-slider__img--pink"><img src="img/services-2.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">50 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Аудит и анализ</div>
+				<div class="services-slider__icon">
+    			<svg class="icon icon-equalizer"><use xlink:href="#icon-equalizer"></use></svg>
+    		</div>
+				<div class="services-slider__img services-slider__img--green"><img src="img/services-3.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">80 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Реклама</div>
+				<div class="services-slider__icon">
+    			<svg class="icon icon-rocket"><use xlink:href="#icon-rocket"></use></svg>
+    		</div>
+				<div class="services-slider__img services-slider__img--purple"><img src="img/services-4.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">250 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Интернет<br>маркетинг</div>
+				<div class="services-slider__icon">
+    			<svg class="icon icon-chat"><use xlink:href="#icon-chat"></use></svg>
+    		</div>
+				<div class="services-slider__img services-slider__img--yellow"><img src="img/services-5.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">60 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Поддержка</div>
+				<div class="services-slider__icon">
+    			<svg class="icon icon-handshake"><use xlink:href="#icon-handshake-o"></use></svg>
+    		</div>
+				<div class="services-slider__img services-slider__img--darkblue"><img src="img/services-6.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">50 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Разработка <br>сайтов</div>
+				<div class="services-slider__img services-slider__img--blue"><img src="img/services-1.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">100 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Продвижение<br>сайтов</div>
+				<div class="services-slider__img services-slider__img--pink"><img src="img/services-2.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">50 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Аудит и анализ</div>
+				<div class="services-slider__img services-slider__img--green"><img src="img/services-3.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">80 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Реклама</div>
+				<div class="services-slider__img services-slider__img--purple"><img src="img/services-4.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">250 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Интернет<br>маркетинг</div>
+				<div class="services-slider__img services-slider__img--yellow"><img src="img/services-5.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">60 000</span> руб.</div>
+			</a>
+			<a href="#" class="services-slider__item">
+				<div class="services-slider__desc">Поддержка</div>
+				<div class="services-slider__img services-slider__img--darkblue"><img src="img/services-6.jpg" alt=""></div>
+				<div class="services-slider__price">от <span class="number">50 000</span> руб.</div>
+			</a>
+		</section>
+		<section class="form  wow pulse">
+			<div class="form__header">Онлайн заявка</div>
+			<form action="" class="form__content">
+				<div class="form__left">
+					<div class="form__inpbox form__inpbox--mb33">
+						<div class="icon"><svg class="icon icon-person"><use xlink:href="#icon-person"></use></svg></div>
+						<input placeholder="Введите ваше имя" type="text" class="form__input form-input--name">
+					</div>
+					<div class="form__inpbox form__inpbox--mb33">
+						<div class="icon"><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg></div>
+						<input placeholder="Введите ваш телефон / E-mail" type="text" class="form__input form-input--phone">
+					</div>
+					<div class="form__inpbox form__inpbox--mb33">
+						<div class="icon"><svg class="icon icon-public"><use xlink:href="#icon-public"></use></svg></div>
+						<input placeholder="Адрес сайта" type="text" class="form__input form-input--site">
+					</div>
+					<textarea placeholder="Дополнительная информация" class="form__input form__textarea"></textarea>
+				</div>
+				<div class="form__right">
+					<div class="form__text">Какие услуги вас интересуют:</div>
+					<div class="form__inpbox">
+						<input id="form__ceo" type="checkbox" class="form__check-input">
+						<label for="form__ceo" class="form__check-label">Продвижение сайта</label>
+					</div>
+					<div class="form__inpbox">
+						<input id="form__build" type="checkbox" class="form__check-input">
+						<label for="form__build" class="form__check-label">Создание сайта</label>
+					</div>
+					<div class="form__inpbox">
+						<input id="form__audit" type="checkbox" class="form__check-input">
+						<label for="form__audit" class="form__check-label">Аудит сайта</label>
+					</div>
+					<div class="form__inpbox">
+						<input id="form__ad" type="checkbox" class="form__check-input">
+						<label for="form__ad" class="form__check-label">Контекстная реклама</label>
+					</div>
+					<div class="form__inpbox form-inpbox--mt30">
+						<input id="form__accept-personal" type="checkbox" class="form__check-input">
+						<label for="form__accept-personal" class="form__check-label">Я согласен на обработку персональных данных</label>
+					</div>
+				</div>
+				<button type="submit" class="form__submit">Отправить заявку</button>
+			</form>
+		</section><!--form-->
+	</main><!--main-->
+	<footer class="page-footer">
+		<div class="page-footer__contact">
+			<a href="#" class="page-footer__logo"><img src="img/logo-footer.png" alt=""></a>
+			<a href="#" class="page-footer__email">
+				<div class="page-footer__icon">
+					<svg class="icon icon-mail_outline"><use xlink:href="#icon-mail_outline"></use></svg>
+				</div>
+				 ES-Studio@mail.ru
+		 	</a>
+			<div class="page-footer__phone">
+				<div class="page-footer__icon">
+					<svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>
+				</div>
+				+7(495) 123-45-67
+			</div>
+			<div class="page-footer__address">
+				<div class="page-footer__icon">
+					<svg class="icon icon-pin-drop"><use xlink:href="#icon-pin-drop"></use></svg>
+				</div>
+				Москва, Большой Каретный пер. д.2
+			</div>
+			<div class="social">
+				<a href="#" class="social__item"></a>
+				<a href="#" class="social__item"></a>
+				<a href="#" class="social__item"></a>
+				<a href="#" class="social__item"></a>
+				<a href="#" class="social__item"></a>
+			</div>
+		</div>
+		<div class="footer-nav">
+			<div class="footer-nav__item">
+				<a href="#" class="footer-nav__header footer-nav__title"><i class="icon"><svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg></i>Наши услуги</a>
+				<div class="footer-nav__links">
+					<a href="#" class="footer-nav__title"><i class="icon"><svg class="icon icon-code"><use xlink:href="#icon-code"></use></svg></i>Разработка сайтов</a>
+					<a href="#" class="footer-nav__link">Интернет-магазины</a>
+					<a href="#" class="footer-nav__link">Лендинг-пейдж</a>
+					<a href="#" class="footer-nav__link">Корпоративные сайты</a>
+					<a href="#" class="footer-nav__link">Сайт-визитка</a>
+					<a href="#" class="footer-nav__link">Адаптивные/мобильные сайты</a>
+				</div>
+			</div>
+			<div class="footer-nav__item">
+				<a href="#" class="footer-nav__header footer-nav__title"><i class="icon"><svg class="icon icon-business_center"><use xlink:href="#icon-business_center"></use></svg></i>Портфолио</a>
+				<div class="footer-nav__links">
+					<a href="#" class="footer-nav__title"><i class="icon"><svg class="icon icon-timeline"><use xlink:href="#icon-timeline"></use></svg></i>Продвижение сайтов</a>
+					<a href="#" class="footer-nav__link">Стратегия и планирование</a>
+					<a href="#" class="footer-nav__link">Работа с конверсиями</a>
+					<a href="#" class="footer-nav__link">Внедрение новых каналов <br>продвижения</a>
+				</div>
+			</div>
+			<div class="footer-nav__item">
+				<a href="#" class="footer-nav__header footer-nav__title"><i class="icon"><svg class="icon icon-supervisor-account"><use xlink:href="#icon-supervisor-account"></use></svg></i>О компании</a>
+				<div class="footer-nav__links">
+					<a href="#" class="footer-nav__title"><i class="icon"><svg class="icon icon-equalizer"><use xlink:href="#icon-equalizer"></use></svg></i>Аудит и анализ</a>
+					<a href="#" class="footer-nav__link">Аналитика трафика</a>
+					<a href="#" class="footer-nav__link">Работа с конверсиями</a>
+					<a href="#" class="footer-nav__link">SEO анализ</a>
+				</div>
+			</div>
+			<div class="footer-nav__item">
+				<a href="#" class="footer-nav__header footer-nav__title"><i class="icon"><svg class="icon icon-room"><use xlink:href="#icon-room"></use></svg></i>Контакты</a>
+				<div class="footer-nav__links">
+					<a href="#" class="footer-nav__title"><i class="icon"><svg class="icon icon-rocket"><use xlink:href="#icon-rocket"></use></svg></i>Реклама</a>
+					<a href="#" class="footer-nav__link">Контекстная реклама</a>
+					<a href="#" class="footer-nav__link">Продвижение в<br> социальных сетях (SMM)</a>
+				</div>
+			</div>
+		</div>
+		<div class="page-footer__copyright">
+			<div class="page-footer__copy">2017 ES-Studio</div>
+			<div class="page-footer__wrap">
+				<div class="page-footer__metrika"></div>
+				<div class="page-footer__by">Создание и продвижение сайта <a href="#">ES-Studio</a></div>
+			</div>
+		</div>
+	</footer><!--page-footer-->
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
