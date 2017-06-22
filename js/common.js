@@ -155,8 +155,5 @@ $(document).ready(function () {
 				show = false;
 			}
 		});
-		$(".portfolio .slick-list").mCustomScrollbar({
-			axis: "x" // horizontal scrollbar
-		});
 });
 new WOW().init();
